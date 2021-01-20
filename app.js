@@ -1,12 +1,24 @@
 'use strict';
 
-var cookieSales = {
-  cookieLocation: ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"],
+var storesLocation = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"]
+var maxCustmerLocation = [23, 3, 11, 20, 2]
+var minCustomersLocation =  [65, 24, 38, 38, 16]
+var averageSoldLocation = [6.3, 1.2, 3.7, 2.3, 4.6]
+var storeHoursLocation = ["6am", "7am", "8am", "9am", "10am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm" ]
+
+
+
+
+
+
+
+cookieSales = {
+  cookieLocation: storesLocation,
   customerPerhour: null,
-  minimumCustomers: [23, 3, 11, 20, 2],
-  maximumCustomers: [65, 24, 38, 38, 16],
-  averageCookiessold: [6.3, 1.2, 3.7, 2.3, 4.6],
-  storeHours: ["6am", "7am", "8am", "9am", "10am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm" ],
+  minCust: maxCustmerLocation,
+  maxCust: minCustomersLocation,
+  avgsold: averageSoldLocation,
+  storeHours: storeHoursLocation,
   randomCustperhour: function (maximumCustomers, minimumCustomers) {
     var randomAmount = (Math.floor(Math.random() * (maximumCustomers-minimumCustomers)) + minimumCustomers);
     this.customerPerhour = randomAmount; // mutation of our object
@@ -58,7 +70,6 @@ for (var i = 0; i < cookieSales.cookieLocation.length; i++) {
   // Making List Items
   for (var j = 0; j < cookieSales.storeHours.length; j++) {
     var liElement = document.createElement('li'); // <li></li>
-    
     sectionElement.appendChild(liElement)
     liElement.textContent = locationArray[i][j] // <li>list name</li>
     divElement.appendChild(liElement)
