@@ -1,23 +1,214 @@
-/* main {
-    font-family: 'Yusei Magic', sans-serif;
+body {
+    align-self: center;
+    margin: auto;
+    background-image:  url(img/salmon.png);
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-position: top center 10% 10%  ;
+    margin: 50px;
+    min-height: 90%;
+    width: 1080px;
+    
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+
+header {
+    width: 900px;
+    float: right;
+    text-align: right;
+    margin: 0px 0px 0px 0px ;
+}
+
+
+nav {
+    position: relative;
+    font-size: 25pt;
+    border: 5px solid #212121;
+    width: 100%;
+    align-self: center;
+    margin: auto;
+
+
+}
+
+nav ul {
+    align-items: center;
+}
+
+nav li {
+    display:inline;
+    margin: auto;
+    height: fit-content;
+    padding: 0px 20px;
+    vertical-align: middle;
+}
+
+/* nav ul li {
+    margin: 0;
+    background-color: blanchedalmond;
+    border: 5px solid #212121;
+    font-size: 30pt;
+    display: inline-block;
+    text-align: center;
 } */
 
-nav ul li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 25px 50px 75px 100px;
-    
+div.leftAside {
+    width: 100%;
+} 
+ 
 
+#leftAside { 
+    position: relative;
+    display:grid;
+    grid-template-columns:480px 480px;
+    grid-gap: 30px;
+    height: fit-content;
+    width: 100%;
+    margin: 15px auto 15px auto;
+    width:  fit-content;
 }
 
-li {
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-weight: bold; */
+#leftAside h2 {
+        font-size: 25pt;
+}
+#leftAside p {
+    font-size: 15pt;
+    height: 300px;
+    scroll-padding-bottom:unset;
 }
 
-#list {
-    background-color: #8BC34A;
-    padding: 20px;
-    border: 4px dashed #212121;
-    margin: 20px;
+#rightAside { 
+    position: relative;
+    display:grid;
+    grid-template-columns:480px 480px;
+    grid-gap: 30px;
+    height: fit-content;
+    width: 100%;
+    margin: 15px auto 15px auto;
+    width:  fit-content;
 }
+
+#rightAside h2 {
+        font-size: 25pt;
+}
+#rightAside p {
+    font-size: 15pt;
+    height: 300px;
+    overflow: auto;
+}
+
+article {
+    width: fit-content;
+    margin: auto;
+}
+
+article img {
+    margin: 5px;
+ }
+
+ aside {
+    height: auto;
+}
+
+/* 
+header h1 {
+    border: 5px solid #212121;
+    color: saddlebrown;
+    font-size: 70pt;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+    padding: 0px 50px 50px 20px;
+}
+
+
+
+section div  {
+    border: 5px solid #212121;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 50px 50px 20px;
+    float: left;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+td {
+    border: 5px solid #212121;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+th {
+    border: 5px solid #212121;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    border: 5px solid #212121;
+}
+
+h2 {
+    background-color: blanchedalmond;
+    /* border: 5px solid #212121; */
+    /* text-align: left; */
+  /*  font-size: 30px;
+    padding: 10px 10px 10px 10px;
+
+} */
+
+main div {
+    border: 5px solid #212121;
+    max-width: 960px;
+    height: calc(100% - 100px);
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  footer {
+    border: 5px solid #212121;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+ #block_1 img {
+    border: 5px solid #212121;
+    display: inline-block;
+    align-items: center;
+    margin: 0px 5px 0px 0px;
+ }
+
+ #block_2 figure img {
+    display: inline;
+    border: 5px solid #212121;
+ }
+
+ #block_2 h2 {
+    border: 5px solid #212121;
+    align-items: center;
+ }
+
+ #block_2 * {
+    align-items: center;
+
+ }  */
