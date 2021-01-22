@@ -1,4 +1,4 @@
- 'use strict';
+'use strict';
 
 var body = document.getElementById('table-body');
 var submitEl = document.getElementById('Submit');
@@ -94,26 +94,26 @@ function display(operationHours) {
 
 
  
-  // var location = event.target.location.value
-  // var minCustomers = event.target.minCustomers.value
-  // var maxCustomers = event.target.maxCustomers.value
-  // var avgCustsale = event.target.avgCustsale.value
+  var location = event.target.location.value
+  var minCustomers = event.target.minCustomers.value
+  var maxCustomers = event.target.maxCustomers.value
+  var avgCustsale = event.target.avgCustsale.value
   var storeHoursLocation = ["6am", "7am", "8am", "9am", "10am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm" ]
 
    
-var location = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"]
-var minCustomers =  [65, 24, 38, 38, 16]
-var maxCustomers = [23, 3, 11, 20, 2]
-var avgCustsale = [6.3, 1.2, 3.7, 2.3, 4.6]
+// var location = ["Seattle", "Tokyo", "Dubai", "Paris", "Lima"]
+// var minCustomers =  [65, 24, 38, 38, 16]
+// var maxCustomers = [23, 3, 11, 20, 2]
+// var avgCustsale = [6.3, 1.2, 3.7, 2.3, 4.6]
 
 
    display(storeHoursLocation)
 
-   for (var i = 0; i < location.length; i++) {
-    var StoreConstructor = new storeBuilder(location[i], minCustomers[i], maxCustomers[i], avgCustsale[i], storeHoursLocation)
+  //  for (var i = 0; i < location.length; i++) {
+  //   var StoreConstructor = new storeBuilder(location[i], minCustomers[i], maxCustomers[i], avgCustsale[i], storeHoursLocation)
 
   // Builds
-  //  var StoreConstructor = new storeBuilder(location, minCustomers, maxCustomers, avgCustsale, storeHoursLocation)
+   var StoreConstructor = new storeBuilder(location, minCustomers, maxCustomers, avgCustsale, storeHoursLocation)
   // Calculates
    StoreConstructor.salesResults()
   // Spits out Data
