@@ -30,7 +30,6 @@ storeBuilder.prototype.salesResults = function() {
   var totalShiftsales = 0
   var SaleSheet = []
   for (var i = 0; i < this.storeHours.length; i++) {
-    console.log()
       var randomAmount = (Math.floor(Math.random() * (this.minCust - this.maxCust + 1)) + this.minCust)
       console.log(this.maxCust, this.minCust, randomAmount)
 
