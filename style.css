@@ -1,10 +1,11 @@
 
 body {
     margin: 0;
-    background-color: #fff;
+    background-color: rgb(135, 170, 164);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   div.wrapper {
@@ -16,11 +17,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-  }
+    }
   
   header, footer {
     display: flex;
     background-color: slategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   header {
@@ -28,19 +30,24 @@ body {
     background-color: slategray;
   }
   
-  nav {
+  #heading {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;    
     align-content: center;
+    justify-content:space-between;
+    
   }
-  
-  nav a {
-    width: 100%;
-    text-align: center;
+
+  #heading a {
+    font-size: 15pt;
+    padding: 20px;
+    background-color: rgb(135, 170, 164);
+    border: 5px solid black;
+    font-weight: bold;
+    -webkit-border-radius: 30px;
   }
   
   main {
@@ -57,56 +64,81 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: center;
-  }
+    align-content: center; 
+
+   }
   
   section.blade.hero {
     width: 100%;
     margin-top: 0;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #e45f00;
   }
-  
-  .hero-text {
-    height: 12rem;
-    position: absolute;
-    background-color: grey;
-    color: black;
-    top: 25%; 
-    left: 25%; 
-    right: 25%;
+
+  section.blade.hero img {
+    width: 100%;
   }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  .hero-text p {
-    text-align: center;
-  }
-  
-  section.two-feature img {
-    width: 50%;
+
+  section.two-feature-left img {
+    width: 100%;
     float: left;
     padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   
-  section.two-feature div {
+  section.two-feature-left div {
+    float: right;
+    padding-left: 1rem;
+  }
+  
+  section.two-feature-left h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  section.two-feature-left p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0px 1rem;
+    font-family: 'Yusei Magic', sans-serif;
+    }
+
+
+  
+.cookie-sale {
+  display: flex;
+  justify-content: center;
+  font-size: 40pt;
+}
+
+
+
+  section.two-feature-right img {
+    width: 50%;
+    float: right;
+    padding: 1px;
+    border: 3px solid #ce0f2e;
+    margin-right: 5rem;
+  }
+  
+  section.two-feature-right div {
     width: 50%;
     float: right;
     padding-left: 1rem;
   }
   
-  section.two-feature h2 {
+  section.two-feature-right h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  section.two-feature p {
+  section.two-feature-right p {
     font-size: 1rem;
     line-height: 1.25rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
   }
   
   .button {
@@ -125,18 +157,68 @@ body {
     margin: 5rem 0;
   }
 
+
+#test-form h2{
+margin-right: 100px;
+}
+
+#test-form fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15pt;
+}
+
+
+#test-form label {
+  display: flex;
+  flex-direction: column;
+  width: 200pt;
+}
+
+#test-form input {
+  height: 20pt;
+  width: 150pt;
+}
+
+button {
+  height: 50pt;
+  width: 150pt;
+  font-size: 15pt;
+  font-weight: bold;
+  float: left;
+  -webkit-border-radius: 39px;
+  border-radius: 39px;
+}
+
+
+  table {
+    display: flex;
+    justify-content: center;
+  }
+
+
   td {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 20pt;
     text-align: center;
     background-color: blanchedalmond;
+    border: 5px solid black;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 th {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     font-size: 20px;
     text-align: center;
     background-color: blanchedalmond;
+    border: 5px solid black;
+    font-family: 'Varela Round', sans-serif;
+
+} 
+
+tr {
+  border: 5px solid black;
 }
+
