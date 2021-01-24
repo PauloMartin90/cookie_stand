@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   div.wrapper {
@@ -21,6 +22,7 @@ body {
   header, footer {
     display: flex;
     background-color: slategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   header {
@@ -35,14 +37,17 @@ body {
     flex-wrap: nowrap;
     align-items: flex-end;    
     align-content: center;
+    justify-content:space-between;
+    
   }
 
   #heading a {
-    font-size: 20pt;
-    padding: 30px;
+    font-size: 15pt;
+    padding: 20px;
     background-color: rgb(135, 170, 164);
     border: 5px solid black;
     font-weight: bold;
+    -webkit-border-radius: 30px;
   }
   
   main {
@@ -60,7 +65,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     align-content: center; 
-    
+
    }
   
   section.blade.hero {
@@ -69,7 +74,6 @@ body {
     display: flex;
     justify-content: center;
     background-color: #e45f00;
-    background-color: rgb(170, 135, 135);
   }
 
   section.blade.hero img {
@@ -98,8 +102,9 @@ body {
   section.two-feature-left p {
     font-size: 1.2rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
-  }
+    margin: 0px 1rem;
+    font-family: 'Yusei Magic', sans-serif;
+    }
 
 
   
@@ -116,6 +121,7 @@ body {
     float: right;
     padding: 1px;
     border: 3px solid #ce0f2e;
+    margin-right: 5rem;
   }
   
   section.two-feature-right div {
@@ -160,7 +166,7 @@ margin-right: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 
@@ -181,7 +187,10 @@ button {
   font-size: 15pt;
   font-weight: bold;
   float: left;
+  -webkit-border-radius: 39px;
+  border-radius: 39px;
 }
+
 
   table {
     display: flex;
@@ -190,38 +199,26 @@ button {
 
 
   td {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 20pt;
     text-align: center;
     background-color: blanchedalmond;
+    border: 5px solid black;
+    font-family: 'Varela Round', sans-serif;
+
 }
 
 th {
-    border: 5px solid #212121;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     font-size: 20px;
     text-align: center;
     background-color: blanchedalmond;
+    border: 5px solid black;
+    font-family: 'Varela Round', sans-serif;
+
 } 
 
-/* .hero-text {
-    height: 12rem;
-    position: absolute;
-    background-color: grey;
-    color: black;
-    top: 25%; 
-    left: 25%; 
-    right: 25%;
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  .hero-text p {
-    text-align: center;
-  }
-   */
+tr {
+  border: 5px solid black;
+}
+

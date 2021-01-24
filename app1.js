@@ -67,7 +67,7 @@ storeBuilder.prototype.salesData = function () {
 }
 
 // Document Writer for Heading Information
-hoursButton.addEventListener('click', function () {
+hoursButton.addEventListener('click', function (event) {
 
   var headingHours = ["6am", "7am", "8am", "9am", "10am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm" ]
 
@@ -123,37 +123,3 @@ hoursButton.addEventListener('click', function () {
  })
 
 
-// //
-//  hoursButton.addEventListener('click', function () {
-
-//   var headingHours = ["6am", "7am", "8am", "9am", "10am", "12am", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm" ]
-
-//   var heading = document.createElement('th')
-//   var tableRow = document.createElement('tr')
-//   var body = document.getElementById('table-body');
-
-//   heading.textContent = ' '
-//   tableRow.appendChild(heading)
-
-//   for (var i = 0; i <= headingHours.length; i++) {
-//     var heading = document.createElement('th')
-
-
-//     console.log(headingHours[i])
-
-//     heading.textContent = headingHours[i];
-//     tableRow.appendChild(heading)
-//   }
-//   heading.textContent = 'Total';
-//   tableRow.appendChild(heading);
-//   body.appendChild(tableRow);
-
-
-// document.write('<h3>' + greeting + '</h3>');
-
-
-
-
-
- 
- 
